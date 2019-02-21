@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="cwc">
+
+	<listeners>
+	<listener class-name="com.cwc.utilites.Reporting"/>
+	</listeners>
+
+	<test name="Croporate Web Control Test">
+		
+		<parameter name="browser" value="chrome" />
+		
+		<classes>
+			 <class name="com.cwc.testCase.TC_LoginTest_001" />  
+			
+			<!--<class name="com.cwc.testCase.TC_LoginDDT_002" />  --> 
+
+		</classes>
+
+	</test>
+
+</suite>

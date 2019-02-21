@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [cwc]">
+  <listeners>
+    <listener class-name="com.cwc.utilites.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Croporate Web Control Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cwc.testCase.TC_LoginDDT_002">
+        <methods>
+          <include name="TearDown"/>
+          <include name="loginDDT" invocation-numbers="0 1 2 3 4"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.cwc.testCase.TC_LoginDDT_002 -->
+    </classes>
+  </test> <!-- Croporate Web Control Test(failed) -->
+</suite> <!-- Failed suite [cwc] -->
